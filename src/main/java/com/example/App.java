@@ -19,9 +19,10 @@ public class App {
     private static int yPosition = 750;
 
     public static void main(String[] args) {
-        File inputDir = new File("D:\\08102025\\App\\fhirpdfdemo\\fhirpdfdemo\\inputJSON");
-        File outputDir = new File("D:\\08102025\\App\\fhirpdfdemo\\fhirpdfdemo\\output");
+        File inputDir = new File("inputJSON");
+        File outputDir = new File("output");
 
+        
         // Ensure directories exist
         if (!outputDir.exists()) {
             outputDir.mkdirs();
