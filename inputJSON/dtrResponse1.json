@@ -1,0 +1,59 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "9d70d470-ab0b-49e5-b96f-438b96bd7526",
+  "status": "completed",
+  "authored": "2026-06-02T19:10:00Z",
+  "subject": {
+    "reference": "urn:uuid:fb12deba-9ec9-4028-80e1-0a3ee952112b"
+  },
+  "encounter": {
+    "reference": "urn:uuid:0c7f5add-c655-4781-8fc2-0e47a2458076"
+  },
+  "item": [
+    {
+      "linkId": "1",
+      "text": "Has the patient demonstrated suicidal ideation within the past 30 days?",
+      "answer": [
+        {
+          "valueBoolean": true
+        }
+      ]
+    },
+    {
+      "linkId": "2",
+      "text": "PHQ-9 Score",
+      "answer": [
+        {
+          "valueInteger": 22
+        }
+      ]
+    },
+    {
+      "linkId": "3",
+      "text": "Has outpatient therapy been attempted?",
+      "answer": [
+        {
+          "valueBoolean": true
+        }
+      ]
+    },
+    {
+      "linkId": "4",
+      "text": "Clinical rationale for intensive outpatient treatment",
+      "answer": [
+        {
+          "valueString": "Patient continues to experience severe depressive symptoms, impairment in social functioning, and requires structured oversight."
+        }
+      ]
+    },
+    {
+      "linkId": "5",
+      "text": "Is the patient medically stable for outpatient behavioral treatment?",
+      "answer": [
+        {
+          "valueBoolean": true
+        }
+      ]
+    }
+  ]
+}
