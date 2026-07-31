@@ -1,0 +1,163 @@
+{
+  "resourceType": "Bundle",
+  "id": "pas-outpatient-behavioral-health-complex-2026",
+  "type": "transaction",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:8f3c71a0-3b1a-4d22-92e1-5bf8c75d4110",
+      "resource": {
+        "resourceType": "QuestionnaireResponse",
+        "id": "8f3c71a0-3b1a-4d22-92e1-5bf8c75d4110",
+        "status": "completed",
+        "authored": "2026-07-30T14:45:00Z",
+        "subject": {
+          "reference": "Patient/example-behavioral-patient",
+          "display": "Jane Doe"
+        },
+        "author": {
+          "reference": "Practitioner/example-behavioral-provider",
+          "display": "Dr. Sarah Lin, MD"
+        },
+        "item": [
+          {
+            "linkId": "sec-1",
+            "text": "1. Administrative & Admission Metadata",
+            "item": [
+              {
+                "linkId": "1.1",
+                "text": "Requested Level of Care (LOC)",
+                "answer": [
+                  {
+                    "valueCoding": {
+                      "system": "http://snomed.info",
+                      "code": "304611000",
+                      "display": "Intensive Outpatient Behavioral Health Program"
+                    }
+                  }
+                ]
+              },
+              {
+                "linkId": "1.2",
+                "text": "Initial Evaluation Admission Date",
+                "answer": [
+                  {
+                    "valueDate": "2026-07-28"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "linkId": "sec-2",
+            "text": "2. Clinical Presentation & Clinical Risk Metrics",
+            "item": [
+              {
+                "linkId": "2.1",
+                "text": "Has the patient exhibited active suicidal ideation or intent within the trailing 30 days?",
+                "answer": [
+                  {
+                    "valueBoolean": true
+                  }
+                ],
+                "item": [
+                  {
+                    "linkId": "2.1.a",
+                    "text": "Provide detailed descriptive indicators regarding specific risk vectors, frequency, intent markers, and safety protocols established.",
+                    "answer": [
+                      {
+                        "valueString": "The patient reports recurring transient thoughts over the past two weeks. While explicit suicidal intent or a formalized plan is denied, recent social stressors have exacerbated chronic underlying ideation. A comprehensive safety contract was initiated, a trusted family member has assumed full control of home medication locking systems, and localized emergency psychiatric contact coordinates were provided."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "linkId": "2.2",
+                "text": "Standardized Psychometric Metrics Executed",
+                "item": [
+                  {
+                    "linkId": "2.2.a",
+                    "text": "Patient Health Questionnaire (PHQ-9) Global Baseline Score",
+                    "answer": [
+                      {
+                        "valueInteger": 24
+                      }
+                    ]
+                  },
+                  {
+                    "linkId": "2.2.b",
+                    "text": "Generalized Anxiety Disorder 7-Item Scale (GAD-7) Score",
+                    "answer": [
+                      {
+                        "valueInteger": 19
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "linkId": "sec-3",
+            "text": "3. Historical Treatment and Clinical Interventions",
+            "item": [
+              {
+                "linkId": "3.1",
+                "text": "Has standard, lower-intensity weekly outpatient psychotherapy been attempted and exhausted?",
+                "answer": [
+                  {
+                    "valueBoolean": true
+                  }
+                ],
+                "item": [
+                  {
+                    "linkId": "3.1.a",
+                    "text": "Specify the duration, therapeutic modalities applied, and reasons for partial or total treatment failure.",
+                    "answer": [
+                      {
+                        "valueString": "The patient actively engaged in traditional weekly Cognitive Behavioral Therapy (CBT) for an uninterrupted period of four months (16 structured sessions total) under licensed supervision. Despite strict compliance, severe functional decompensation persisted. Symptoms continue to severely disrupt occupational consistency and primary relationship support systems, rendering standard outpatient care insufficient to maintain basic clinical stabilization."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "linkId": "3.2",
+                "text": "Total psychiatric pharmaceutical modifications implemented within the last 45 calendar days",
+                "answer": [
+                  {
+                    "valueInteger": 2
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "linkId": "sec-4",
+            "text": "4. Medical Stability and Exclusion Criteria Verification",
+            "item": [
+              {
+                "linkId": "4.1",
+                "text": "Is the patient determined to be medically stable to fully participate in intensive outpatient behavioral therapy?",
+                "answer": [
+                  {
+                    "valueBoolean": true
+                  }
+                ]
+              },
+              {
+                "linkId": "4.2",
+                "text": "Are there any comorbid active primary substance withdrawal vectors requiring immediate, separate sub-acute medical detoxification protocols?",
+                "answer": [
+                  {
+                    "valueBoolean": false
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
