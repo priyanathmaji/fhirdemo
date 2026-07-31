@@ -2,7 +2,7 @@
 
 A lightweight, high-performance Java utility designed to ingest HL7 Da Vinci DTR (Documentation Templates and Rules) responses in structured FHIR JSON format and compile them into clean, human-readable PDF clinical reports. 
 
-### 🚀 Key Features
+### Key Features
 
 * **Zero-Framework Parsing**: Bypasses massive healthcare server stacks (like HAPI FHIR) using Jackson Databind to maintain a tiny execution footprint and fast compilation speeds.
 * **Polymorphic Answer Handling**: Automatically maps various FHIR data variants including Boolean flags, integers, localized strings, ISO dates, and SNOMED/LOINC code displays.
@@ -13,7 +13,7 @@ A lightweight, high-performance Java utility designed to ingest HL7 Da Vinci DTR
   * **Dynamic Multi-Page Breaks**: Monitors the vertical coordinate workspace to cleanly spawn new PDF pages when content overlaps the lower margins.
 * **Flexible Architecture**: Utilizes workspace-relative pathing definitions rather than rigid hardcoded directories to ensure complete cross-platform transportability.
 
-### 🛠️ Prerequisites & Environment Setup
+### Prerequisites & Environment Setup
 
 Ensure your local operating workstation is provisioned with the following environments: 
 
@@ -21,7 +21,7 @@ Ensure your local operating workstation is provisioned with the following enviro
 * **IDE**: Visual Studio Code with the **Extension Pack for Java** active
 * **Build tool**: Maven dependencies are managed internally by the VS Code integrated language server wrapper.
 
-### 📂 Project Architecture
+### Project Architecture
 
 text
 
@@ -39,7 +39,7 @@ fhirpdfdemo/
 
 Use code with caution.
 
-### 📦 Dependency Stack (pom.xml)
+### Dependency Stack (pom.xml)
 
 The application remains fast and secure by isolating its operational boundaries to two primary libraries: 
 
@@ -63,7 +63,7 @@ xml
 
 Use code with caution.
 
-### 💻 Technical Usage Instructions
+### Technical Usage Instructions
 
 ### 1. Ingesting Clinical Profiles
 
@@ -93,7 +93,7 @@ Use code with caution.
 
 Once the logs print the SUCCESS trail markers, open the output subdirectory. The generated reports will preserve document structures using safe ASCII markers (->, -) to maintain 100% compliance with default Western font maps (Helvetica). 
 
-### ⚠️ Known Implementation Constraints
+### Known Implementation Constraints
 
 * **Unicode Font Bounds**: The layout uses standard Helvetica, which does not support advanced emoji, arrows (↳), or mathematical characters. Use basic text representations to avoid triggering layout runtime exceptions.
 * **Thread-Safe Parsing Loop**: State metrics are tracking boundaries utilizing local instances wrapped inside an isolated RenderState class profile. Avoid migrating these elements to global structural static configurations when expanding code pipelines.
